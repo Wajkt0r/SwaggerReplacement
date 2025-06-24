@@ -2,6 +2,8 @@
 
 I think there's no need to mention Swagger features. I'm just linking the same issue which appeared in OpenAPI-UI
 
+---
+
 ### 1. 🔐 Authorization (Bearer) not generated in OpenAPI spec
 
 In .NET 10, when using the OpenAPI generator, the following section was **not automatically included** in the final OpenAPI spec (`v1.json`):
@@ -18,6 +20,8 @@ In .NET 9, we could handle this by implementing an OpenApiDocumentTransformer, b
 
 📌 A similar issue was reported and fixed in Scalar (it was resolved for the .NET 9:
 https://github.com/scalar/scalar/issues/4055
+
+---
 
 ### 2. ⚙️ Summary
 
