@@ -1,4 +1,4 @@
-## 🧩 OpenAPI-UI [openapi-ui]
+## 🧩 OpenAPI-UI [localhost:port/openapi-ui]
 
 The [OpenAPI-UI](https://github.com/jakubkozera/openapi-ui) package by [@jakubkozera](https://github.com/jakubkozera) was recently published, and the `README.md` is actively maintained – feel free to check it out.
 It has a lot of unique features (check out collections / outputs).
