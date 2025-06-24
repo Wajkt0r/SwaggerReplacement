@@ -1,5 +1,4 @@
 ﻿using Microsoft.OpenApi;
-using Scalar.AspNetCore;
 using SwaggerReplacement.Transformers;
 
 namespace SwaggerReplacement.Extensions;
@@ -21,15 +20,10 @@ public static class DocumentationExtensions
 
     public static IEndpointRouteBuilder UseApiDocumentation(this IEndpointRouteBuilder endpoints)
     {
-        endpoints.MapOpenApi();
-
-        endpoints.MapScalarApiReference(options =>
-        {
-            options
-                .WithTitle("Swagger Replacement – Scalar")
-                .WithTheme(ScalarTheme.BluePlanet)
-                .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);      
-        });
+        // In .NET 9, OpenAPI transformers were introduced to handle things like Bearer auth automatically,
+        // but they currently don’t apply the security schemes correctly in the generated v1.json.
+        // This issue also affects OpenAPI-UI. Likely needs a future update from the OpenAPI library.
+        //endpoints.MapOpenApi(); 
 
         return endpoints;
     }

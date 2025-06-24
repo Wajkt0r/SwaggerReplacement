@@ -17,4 +17,12 @@ app.MapControllers();
 
 app.UseApiDocumentation();
 
+app.UseStaticFiles();
+
+app.UseSwaggerUI(options =>
+{
+    options.SwaggerEndpoint("/openapi/v1.json", "Swagger Replacement - XDD Swagger");
+    options.RoutePrefix = "swagger";
+});
+
 app.Run();
