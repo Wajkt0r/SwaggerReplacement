@@ -18,3 +18,14 @@ In .NET 9, we could handle this by implementing an OpenApiDocumentTransformer, b
 
 📌 A similar issue was reported and fixed in Scalar (it was resolved for the .NET 9:
 https://github.com/scalar/scalar/issues/4055
+
+### 2. ⚙️ Summary
+
+Pros: 
+- Well-known and widely used
+- Tested for "ages"
+- Stable version for now (.NET 9.0)
+
+Cons:
+- Limited updates – the latest 9.0 version was released June 13
+- No extra features like collections or outputs (as seen in OpenAPI-UI)
