@@ -3,7 +3,7 @@
 This repository demonstrates three different UI tools for exploring OpenAPI specs in a .NET 10 (preview) project:
 
 - [OpenAPI-UI](https://github.com/jakubkozera/openapi-ui)
-- [SwaggerUI](https://github.com/swagger-api/swagger-ui)
+- [SwaggerUI](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
 - [Scalar](https://github.com/scalar/scalar)
 
 Each tool is configured in its own branch:
