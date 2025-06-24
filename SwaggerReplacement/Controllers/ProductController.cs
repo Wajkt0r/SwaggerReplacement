@@ -9,7 +9,6 @@ namespace SwaggerReplacement.Controllers;
 /// Manages the product catalog.
 /// </summary>
 [ApiController]
-[Authorize]
 [Route("api/[controller]")]
 public class ProductController : ControllerBase
 {
