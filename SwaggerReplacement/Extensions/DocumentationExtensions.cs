@@ -1,5 +1,4 @@
 ﻿using Microsoft.OpenApi;
-using Scalar.AspNetCore;
 using SwaggerReplacement.Transformers;
 
 namespace SwaggerReplacement.Extensions;
@@ -17,20 +16,5 @@ public static class DocumentationExtensions
         });
 
         return services;
-    }
-
-    public static IEndpointRouteBuilder UseApiDocumentation(this IEndpointRouteBuilder endpoints)
-    {
-        endpoints.MapOpenApi();
-
-        endpoints.MapScalarApiReference(options =>
-        {
-            options
-                .WithTitle("Swagger Replacement – Scalar")
-                .WithTheme(ScalarTheme.BluePlanet)
-                .WithDefaultHttpClient(ScalarTarget.CSharp, ScalarClient.HttpClient);      
-        });
-
-        return endpoints;
     }
 }

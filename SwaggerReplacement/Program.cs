@@ -1,4 +1,5 @@
-﻿using SwaggerReplacement.Extensions;
+﻿using JakubKozera.OpenApiUi;
+using SwaggerReplacement.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,10 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-app.UseApiDocumentation();
+app.MapOpenApi();
+app.UseOpenApiUi(options =>
+{
+    options.OpenApiSpecPath = "openapi/v1.json";
+});
 
 app.Run();
