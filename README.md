@@ -9,9 +9,9 @@ This repository demonstrates three different UI tools for exploring OpenAPI spec
 Each tool is configured in its own branch:
 | Branch       | Description                                           |
 |--------------|-------------------------------------------------------|
-| [`openapi-ui`](https://github.com/your-repo/swaggerreplacement/tree/openapi-ui) |  Modern dark UI with collections & outputs |
-| [`swagger`](https://github.com/your-repo/swaggerreplacement/tree/swagger)     |  Classic and reliable Swagger UI           |
-| [`scalar`](https://github.com/your-repo/swaggerreplacement/tree/scalar)       |  Sleek interface with full JWT support     |
+| [`openapi-ui`](https://github.com/Wajkt0r/swaggerreplacement/tree/openapi-ui) |  Modern dark UI with collections & outputs |
+| [`swagger`](https://github.com/Wajkt0r/swaggerreplacement/tree/swagger)     |  Classic and reliable Swagger UI           |
+| [`scalar`](https://github.com/Wajkt0r/swaggerreplacement/tree/scalar)       |  Sleek interface with full JWT support     |
 
 ---
 
