@@ -1,4 +1,4 @@
-## 🧩 OpenAPI-UI
+## 🧩 OpenAPI-UI [openapi-ui]
 
 The [OpenAPI-UI](https://github.com/jakubkozera/openapi-ui) package by [@jakubkozera](https://github.com/jakubkozera) was recently published, and the `README.md` is actively maintained – feel free to check it out.
 It has a lot of unique features (check out collections / outputs).
@@ -35,3 +35,14 @@ In .NET 9, we could handle this by implementing an OpenApiDocumentTransformer, b
 
 📌 A similar issue was reported and fixed in Scalar (it was resolved for the .NET 9:
 https://github.com/scalar/scalar/issues/4055
+
+### 3. ⚙️ Summary
+
+Pros:
+- Modern and clean UI
+- New features like collection, outputs etc.
+- Actively maintened
+
+Cons:
+- New package which might result in some edge-case issues
+- Missing fields in request (mentioned above)
